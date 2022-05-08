@@ -6,6 +6,8 @@ anyways, you will need masm32 for this to work, as it uses masm to assembly the 
 
 This langauge is converted into assembly before compilation. This is because you can add you're own assembly code alongside this language to build functions that would otherwise not be included, meaning you can do just about anything with it.
 
+At the moment it just compiles files called code.txt cause idk what to name the file extention yet, ill add command line arguments whenever i can be bothered. (yeah ik it takes 2 seconds to do but im busy rn)
+
 --- Documentation ---
 
 -- functions --
@@ -62,6 +64,8 @@ BE AWARE: when using the stack make sure you pop everything off that you added o
 
 BE AWAREx2: When the return address is poped off it is saved into the esi register, so anything you have in there by the end of the functiuon will be replaced, not sure why you would be trying to transfer data between funtions using the esi register but keep a note anyway.
 
+-- combining --
+To combine with other code/lib's use 'combine', similer to import to include. 
 
 
 -- things im sorry about --
