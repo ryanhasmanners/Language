@@ -1,0 +1,35 @@
+#inputstr (inputstrPrompt,inputstrAddress){
+    inputstrPrompt = 1
+    inputstrAddress = 1
+    inputstrBytes = 100
+    StdOut inputstrPrompt
+    StdIn .inputstrBytes inputstrAddress
+}
+
+#strcomp (compstr1,compstr2,compfunc){
+    compstr1 = 1
+    compstr2 = 1
+    compfunc = 1
+    crt__stricmp compstr1 compstr2
+    /cmp eax, 0
+    /je compsame
+    /jne compdiff
+    /compsame:
+    /call compfunc
+    /compdiff:
+}
+
+#forloop (fortimes,forfunc){
+    fortimes = 1
+    forfunc = 1
+    /dec fortimes
+    /fordo:
+    /push esi
+    forfunc
+    /pop esi
+    /cmp fortimes, 0
+    /je forend
+    /dec fortimes
+    /jmp fordo
+    /forend:
+}

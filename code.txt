@@ -1,0 +1,21 @@
+combine mllib.txt
+
+#login(null) {
+    prompt = "Password:"
+    password = "password"
+    passinput = *20
+    StdOut prompt
+    inputstr passinput prompt
+}
+
+#main(null) {
+    attempts = "3"
+    warning1 = "You have "
+    warning2 = " attempts left!",10,0
+    StdOut warning1
+    StdOut attempts
+    StdOut warning2
+    login
+    /dec attempts
+    main
+}
