@@ -8,9 +8,9 @@ This langauge is converted into assembly before compilation. This is because you
 
 At the moment it just compiles files called code.txt cause idk what to name the file extention yet, ill add command line arguments whenever i can be bothered. (yeah ik it takes 2 seconds to do but im busy rn)
 
---- Documentation ---
+# --- Documentation ---
 
--- functions --
+# -- functions --
 
 functions are layed out as follows:
 
@@ -24,7 +24,7 @@ functions are layed out as follows:
  #functionName(null){
  }
  
- -- function calls --
+ # -- function calls --
  
  functions are called in the format: function argu ments
  example: StdOut message
@@ -38,7 +38,7 @@ functions are layed out as follows:
     StdIn .inputBytes inputAddress
  }
  
- -- varibles --
+ # -- varibles --
  In this language all varibles are global, which im sure you will either love or hate.
  Varibles are deleared as you'd expect, example:
  
@@ -53,7 +53,7 @@ functions are layed out as follows:
  
  BE AWARE: like i said above all varibles are global, meaning do not name two varibles the same name. To stop this happening in functions I've named all varibles definded within functions starting with the name of the function. So in the inputstr function varibles are named inputstrPrompt and inputstrAddress.
  
- -- embedded assembly --
+ # -- embedded assembly --
  Embedding is possible because the code is translated into assembly basically directly.
  Embedding is done with a '/' followed by the asm code
  Example: /dec attempts
@@ -64,11 +64,11 @@ BE AWARE: when using the stack make sure you pop everything off that you added o
 
 BE AWAREx2: When the return address is poped off it is saved into the esi register, so anything you have in there by the end of the functiuon will be replaced, not sure why you would be trying to transfer data between funtions using the esi register but keep a note anyway.
 
-# combining
+# -- Combining --
 To combine with other code/lib's use 'combine', similer to import to include. 
 
 
--- things im sorry about --
+# -- things im sorry about --
 yeah so theres no joining strings, at least not yet. HOWEVER this can be inplemented by making you're own function, 
 i'm thinking something like join stringaddr string1 string2  which would join theb strings and save the completed string into stringaddr.
 Actually now i think about it thats pretty easy to do, ill do that at some point and add it into the standered lib.
