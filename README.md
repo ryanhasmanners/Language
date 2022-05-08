@@ -64,7 +64,7 @@ BE AWARE: when using the stack make sure you pop everything off that you added o
 
 BE AWAREx2: When the return address is poped off it is saved into the esi register, so anything you have in there by the end of the functiuon will be replaced, not sure why you would be trying to transfer data between funtions using the esi register but keep a note anyway.
 
-## -- Combining --
+## -- combining --
 To combine with other code/lib's use 'combine', similer to import to include. 
 
 
