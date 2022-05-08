@@ -10,7 +10,7 @@ At the moment it just compiles files called code.txt cause idk what to name the 
 
 # --- Documentation ---
 
-# -- functions --
+## -- functions --
 
 functions are layed out as follows:
 
