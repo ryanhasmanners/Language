@@ -69,7 +69,7 @@ To combine with other code/lib's use 'combine', similer to import to include.
 
 
 ## -- things im sorry about --
-yeah so theres no joining strings, at least not yet. HOWEVER this can be inplemented by making you're own function, 
+yeah so theres no joining strings, at least not yet. HOWEVER this can be implemented by making you're own function, 
 i'm thinking something like join stringaddr string1 string2  which would join theb strings and save the completed string into stringaddr.
 Actually now i think about it thats pretty easy to do, ill do that at some point and add it into the standered lib.
 
